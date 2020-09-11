@@ -38,10 +38,11 @@ module Fastlane
         end
 
         # start upload
+        # increase open timeout from 300 to 3000 by leon
         conn_options = {
           request: {
             timeout:       1000,
-            open_timeout:  300
+            open_timeout:  3000
           }
         }
 
